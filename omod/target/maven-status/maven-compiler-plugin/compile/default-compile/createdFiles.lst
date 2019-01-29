@@ -1,0 +1,3 @@
+org/openmrs/module/patienttodolist/extension/html/AdminList.class
+org/openmrs/module/patienttodolist/fragment/controller/UsersFragmentController.class
+org/openmrs/module/patienttodolist/web/controller/OpenmrsmodulepatienttodolistController.class
