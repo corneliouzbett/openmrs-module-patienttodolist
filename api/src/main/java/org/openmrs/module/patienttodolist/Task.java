@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity(name = "tasks")
+@Table(name = "tasks")
 public class Task extends BaseOpenmrsData {
 	
 	@Id

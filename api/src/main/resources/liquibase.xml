@@ -34,9 +34,6 @@
             <column name="owner" type="int"/>
             <column name="description" type="varchar(255)"/>
         </createTable>
-        <addForeignKeyConstraint constraintName="patienttodolist_item_owner_fk" baseTableName="patienttodolist_item"
-                                 baseColumnNames="owner" referencedTableName="users"
-                                 referencedColumnNames="user_id"/>
 
         <createTable tableName="tasks">
             <column name="id" type="int">
@@ -47,6 +44,13 @@
             <column name="created_at" type="DATE"/>
             <column name="completed" type="BOOLEAN"/>
         </createTable>
+
+        <addForeignKeyConstraint constraintName="patienttodolist_item_owner_fk" baseTableName="patienttodolist_item"
+                                 baseColumnNames="owner" referencedTableName="users"
+                                 referencedColumnNames="user_id"/>
+        <addForeignKeyConstraint constraintName="patienttodolist_patient_task_fk" baseTableName="tasks"
+                                 baseColumnNames="patient_id" referencedTableName="patient"
+                                 referencedColumnNames="patient_id"/>
     </changeSet>
 
 </databaseChangeLog>
