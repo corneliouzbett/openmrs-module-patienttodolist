@@ -24,9 +24,9 @@ import javax.persistence.Table;
 /**
  * Please note that a corresponding table schema must be created in liquibase.xml.
  */
-//Uncomment 2 lines below if you want to make the Item class persistable, see also OpenmrsmodulepatienttodolistDaoTest and liquibase.xml
-//@Entity(name = "patienttodolist.Item")
-//@Table(name = "patienttodolist_item")
+// Uncomment 2 lines below if you want to make the Item class persistable, see also OpenmrsmodulepatienttodolistDaoTest and liquibase.xml
+@Entity(name = "patienttodolist.Item")
+@Table(name = "patienttodolist_item")
 public class Item extends BaseOpenmrsData {
 	
 	@Id
