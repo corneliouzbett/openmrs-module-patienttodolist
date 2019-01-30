@@ -7,6 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
+
 package org.openmrs.module.patienttodolist.api.impl;
 
 import org.openmrs.api.APIException;
