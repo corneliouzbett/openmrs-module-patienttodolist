@@ -6,7 +6,7 @@ import org.openmrs.Patient;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "tasks")
+@Entity(name = "Task")
 @Table(name = "tasks")
 public class Task extends BaseOpenmrsData {
 	
@@ -36,18 +36,25 @@ public class Task extends BaseOpenmrsData {
 	private Boolean completed;
 	
 	@Override
+	public Integer getId() {
+		return id;
+	}
+	
+	@Override
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	@Override
 	public String getUuid() {
 		return super.getUuid();
 	}
-	
+
 	@Override
-	public Integer getId() {
-		return null;
+	public void setUuid(String uuid) {
+		super.setUuid(uuid);
 	}
-	
-	@Override
-	public void setId(Integer integer) {
-		
+
+	public Task() {
 	}
 	
 	public Patient getPatient() {

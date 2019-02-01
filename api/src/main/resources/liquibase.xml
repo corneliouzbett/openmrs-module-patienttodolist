@@ -5,24 +5,14 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
 
-    <!--
-    	See http://wiki.openmrs.org/display/docs/Module+liquibase+File for 
-    	documentation on this file.
-    
-        See http://www.liquibase.org/manual/home#available_database_refactorings
-        for a list of supported elements and attributes
-    -->
-
-    <!-- Uncomment the changeset below if you want to make the Item class persistable, see also Item and OpenmrsmodulepatienttodolistDaoTest -->
-
     <changeSet id="patienttodolist-2016-08-02-12-21" author="corneliouz bett">
         <preConditions onFail="MARK_RAN">
             <not>
-                <tableExists tableName="patienttodolist_item"/>
+                <tableExists tableName="item"/>
             </not>
         </preConditions>
         <comment>
-            Creating the patienttodolist_item table
+            Creating the item table
         </comment>
         <createTable tableName="patienttodolist_item">
             <column name="patienttodolist_item_id" type="int" autoIncrement="true">

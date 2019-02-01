@@ -35,7 +35,6 @@ public class OpenmrsmodulepatienttodolistDaoTest extends BaseModuleContextSensit
 	UserService userService;
 	
 	@Test
-	@Ignore("Unignore if you want to make the Item class persistable, see also Item and liquibase.xml")
 	public void saveItem_shouldSaveAllPropertiesInDb() {
 		//Given
 		Item item = new Item();
