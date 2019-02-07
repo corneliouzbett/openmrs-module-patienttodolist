@@ -1,2 +1,2 @@
 org/openmrs/module/patienttodolist/api/OpenmrsmodulepatienttodolistServiceTest.class
-org/openmrs/module/patienttodolist/api/dao/OpenmrsmodulepatienttodolistDaoTest.class
+org/openmrs/module/patienttodolist/dao/OpenmrsmodulepatienttodolistDaoTest.class

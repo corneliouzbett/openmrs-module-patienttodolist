@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.patienttodolist;
+package org.openmrs.module.patienttodolist.config;
 
 import org.springframework.stereotype.Component;
 

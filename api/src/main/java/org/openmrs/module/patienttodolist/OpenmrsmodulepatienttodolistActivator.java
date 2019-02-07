@@ -7,6 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
+
 package org.openmrs.module.patienttodolist;
 
 import org.apache.commons.logging.Log;
@@ -16,22 +17,9 @@ import org.openmrs.module.BaseModuleActivator;
 /**
  * This class contains the logic that is run every time this module is either started or shutdown
  */
+
 public class OpenmrsmodulepatienttodolistActivator extends BaseModuleActivator {
 	
 	private Log log = LogFactory.getLog(this.getClass());
-	
-	/**
-	 * @see #started()
-	 */
-	public void started() {
-		log.info("Started Openmrs module patienttodolist");
-	}
-	
-	/**
-	 * @see #shutdown()
-	 */
-	public void shutdown() {
-		log.info("Shutdown Openmrs module patienttodolist");
-	}
 	
 }

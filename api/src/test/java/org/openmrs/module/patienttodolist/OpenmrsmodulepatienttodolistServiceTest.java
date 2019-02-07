@@ -16,7 +16,7 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.openmrs.User;
 import org.openmrs.api.UserService;
-import org.openmrs.module.patienttodolist.Item;
+import org.openmrs.module.patienttodolist.domains.Item;
 import org.openmrs.module.patienttodolist.api.dao.OpenmrsmodulepatienttodolistDao;
 import org.openmrs.module.patienttodolist.api.impl.OpenmrsmodulepatienttodolistServiceImpl;
 import static org.mockito.Mockito.*;

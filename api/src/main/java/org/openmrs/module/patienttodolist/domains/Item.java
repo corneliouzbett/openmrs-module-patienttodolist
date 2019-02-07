@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.patienttodolist;
+package org.openmrs.module.patienttodolist.domains;
 
 import org.openmrs.BaseOpenmrsData;
 import org.openmrs.User;
@@ -21,12 +21,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-/**
- * Please note that a corresponding table schema must be created in liquibase.xml.
- */
-//Uncomment 2 lines below if you want to make the Item class persistable, see also OpenmrsmodulepatienttodolistDaoTest and liquibase.xml
-//@Entity(name = "patienttodolist.Item")
-//@Table(name = "patienttodolist_item")
+@Entity(name = "Item")
+@Table(name = "item")
 public class Item extends BaseOpenmrsData {
 	
 	@Id

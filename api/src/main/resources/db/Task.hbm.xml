@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.openmrs.module.patienttodolist">
+    <class name="Task" table="tasks" lazy="false">
+
+        <id name="taskId" type="int" column="task_id" unsaved-value="null">
+            <generator class="native"/>
+        </id>
+
+        <property name="name" type="java.lang.String" column="name"
+                  not-null="true" length="255"/>
+        <property name="description" type="java.lang.String" column="description"
+                  not-null="true" length="5000"/>
+        <property name="createdAt" type="java.util.Date" column="created_at"
+                  not-null="true" />
+        <property name="completed" type="java.lang.Boolean" column="completed"
+                  not-null="true" />
+
+        <many-to-one name="patient_id" class="org.openmrs.Patient"
+                     column="patient_id" />
+
+    </class>
+
+</hibernate-mapping>

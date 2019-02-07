@@ -1,6 +1,11 @@
-org/openmrs/module/patienttodolist/Item.class
+org/openmrs/module/patienttodolist/config/OpenmrsmodulepatienttodolistConfig.class
+org/openmrs/module/patienttodolist/api/impl/OpenmrsmoduletaskServiceImpl.class
 org/openmrs/module/patienttodolist/OpenmrsmodulepatienttodolistActivator.class
 org/openmrs/module/patienttodolist/api/impl/OpenmrsmodulepatienttodolistServiceImpl.class
-org/openmrs/module/patienttodolist/OpenmrsmodulepatienttodolistConfig.class
-org/openmrs/module/patienttodolist/api/OpenmrsmodulepatienttodolistService.class
+org/openmrs/module/patienttodolist/api/dao/TaskDaoImpl.class
+org/openmrs/module/patienttodolist/domains/Item.class
+org/openmrs/module/patienttodolist/api/OpenmrsmoduletaskService.class
 org/openmrs/module/patienttodolist/api/dao/OpenmrsmodulepatienttodolistDao.class
+org/openmrs/module/patienttodolist/api/dao/TasksDao.class
+org/openmrs/module/patienttodolist/domains/Task.class
+org/openmrs/module/patienttodolist/api/OpenmrsmodulepatienttodolistService.class

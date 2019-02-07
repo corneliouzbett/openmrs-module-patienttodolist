@@ -12,7 +12,7 @@ package org.openmrs.module.patienttodolist.api.dao;
 import org.hibernate.criterion.Restrictions;
 import org.openmrs.api.db.hibernate.DbSession;
 import org.openmrs.api.db.hibernate.DbSessionFactory;
-import org.openmrs.module.patienttodolist.Item;
+import org.openmrs.module.patienttodolist.domains.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
