@@ -1,4 +1,5 @@
-org/openmrs/module/patienttodolist/web/controller/TasksController.class
+org/openmrs/module/patienttodolist/web/resources/TasksResource.class
 org/openmrs/module/patienttodolist/extension/html/AdminList.class
 org/openmrs/module/patienttodolist/fragment/controller/UsersFragmentController.class
+org/openmrs/module/patienttodolist/web/controller/TasksResourceController.class
 org/openmrs/module/patienttodolist/web/controller/OpenmrsmodulepatienttodolistController.class

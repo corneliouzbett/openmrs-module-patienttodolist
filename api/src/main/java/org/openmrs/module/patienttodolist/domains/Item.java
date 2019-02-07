@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.patienttodolist;
+package org.openmrs.module.patienttodolist.domains;
 
 import org.openmrs.BaseOpenmrsData;
 import org.openmrs.User;

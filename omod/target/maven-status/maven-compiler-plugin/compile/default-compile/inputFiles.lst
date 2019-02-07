@@ -1,4 +1,5 @@
+/home/corneliouzbett/Documents/Ampath/patienttodolist/omod/src/main/java/org/openmrs/module/patienttodolist/web/resources/TasksResource.java
 /home/corneliouzbett/Documents/Ampath/patienttodolist/omod/src/main/java/org/openmrs/module/patienttodolist/extension/html/AdminList.java
-/home/corneliouzbett/Documents/Ampath/patienttodolist/omod/src/main/java/org/openmrs/module/patienttodolist/web/controller/TasksController.java
+/home/corneliouzbett/Documents/Ampath/patienttodolist/omod/src/main/java/org/openmrs/module/patienttodolist/web/controller/TasksResourceController.java
 /home/corneliouzbett/Documents/Ampath/patienttodolist/omod/src/main/java/org/openmrs/module/patienttodolist/fragment/controller/UsersFragmentController.java
 /home/corneliouzbett/Documents/Ampath/patienttodolist/omod/src/main/java/org/openmrs/module/patienttodolist/web/controller/OpenmrsmodulepatienttodolistController.java

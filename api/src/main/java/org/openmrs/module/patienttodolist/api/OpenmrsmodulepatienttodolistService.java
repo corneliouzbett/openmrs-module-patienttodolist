@@ -12,8 +12,8 @@ package org.openmrs.module.patienttodolist.api;
 import org.openmrs.annotation.Authorized;
 import org.openmrs.api.APIException;
 import org.openmrs.api.OpenmrsService;
-import org.openmrs.module.patienttodolist.OpenmrsmodulepatienttodolistConfig;
-import org.openmrs.module.patienttodolist.Item;
+import org.openmrs.module.patienttodolist.config.OpenmrsmodulepatienttodolistConfig;
+import org.openmrs.module.patienttodolist.domains.Item;
 import org.springframework.transaction.annotation.Transactional;
 
 /**

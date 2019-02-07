@@ -5,17 +5,7 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
 
-    <!--
-    	See http://wiki.openmrs.org/display/docs/Module+liquibase+File for 
-    	documentation on this file.
-    
-        See http://www.liquibase.org/manual/home#available_database_refactorings
-        for a list of supported elements and attributes
-    -->
-
-    <!-- Uncomment the changeset below if you want to make the Item class persistable, see also Item and OpenmrsmodulepatienttodolistDaoTest -->
-
-    <changeSet id="patienttodolist-2016-08-02-12-21" author="corneliouz bett">
+    <changeSet id="patienttodolist-2019-12-03-12-21" author="corneliouz bett">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="item"/>
@@ -24,8 +14,8 @@
         <comment>
             Creating the item table
         </comment>
-        <createTable tableName="patienttodolist_item">
-            <column name="patienttodolist_item_id" type="int" autoIncrement="true">
+        <createTable tableName="item">
+            <column name="item_id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="uuid" type="char(38)">
@@ -39,17 +29,18 @@
             <column name="id" type="int">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
+            <column name="patient" type="int"/>
             <column name="name" type="varchar(255)"/>
             <column name="description" type="varchar(255)"/>
             <column name="created_at" type="DATE"/>
             <column name="completed" type="BOOLEAN"/>
         </createTable>
 
-        <addForeignKeyConstraint constraintName="patienttodolist_item_owner_fk" baseTableName="patienttodolist_item"
+        <addForeignKeyConstraint constraintName="patienttodolist_item_owner_fk" baseTableName="item"
                                  baseColumnNames="owner" referencedTableName="users"
                                  referencedColumnNames="user_id"/>
         <addForeignKeyConstraint constraintName="patienttodolist_patient_task_fk" baseTableName="tasks"
-                                 baseColumnNames="patient_id" referencedTableName="patient"
+                                 baseColumnNames="patient" referencedTableName="patient"
                                  referencedColumnNames="patient_id"/>
     </changeSet>
 

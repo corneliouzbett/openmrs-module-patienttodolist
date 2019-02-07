@@ -10,10 +10,9 @@
 package org.openmrs.module.patienttodolist.dao;
 
 import org.junit.Test;
-import org.junit.Ignore;
 import org.openmrs.api.UserService;
 import org.openmrs.api.context.Context;
-import org.openmrs.module.patienttodolist.Item;
+import org.openmrs.module.patienttodolist.domains.Item;
 import org.openmrs.module.patienttodolist.api.dao.OpenmrsmodulepatienttodolistDao;
 import org.openmrs.test.BaseModuleContextSensitiveTest;
 import org.springframework.beans.factory.annotation.Autowired;

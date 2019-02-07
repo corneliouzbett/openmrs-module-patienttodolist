@@ -22,29 +22,4 @@ public class OpenmrsmodulepatienttodolistActivator extends BaseModuleActivator {
 	
 	private Log log = LogFactory.getLog(this.getClass());
 	
-	/**
-	 * @see #started()
-	 */
-	public void started() {
-		log.info("Started Openmrs module patienttodolist");
-	}
-	
-	/**
-	 * @see #shutdown()
-	 */
-	public void shutdown() {
-		log.info("Shutdown Openmrs module patienttodolist");
-	}
-	
-	@Override
-	public void willStop() {
-		super.willStop();
-		log.info("stopping Openmrs module patienttodolist ");
-	}
-	
-	@Override
-	public void willStart() {
-		super.willStart();
-		log.info("starting Openmrs module patienttodolist");
-	}
 }

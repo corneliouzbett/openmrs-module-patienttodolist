@@ -1,4 +1,4 @@
-package org.openmrs.module.patienttodolist;
+package org.openmrs.module.patienttodolist.domains;
 
 import org.openmrs.BaseOpenmrsData;
 import org.openmrs.Patient;
@@ -44,16 +44,17 @@ public class Task extends BaseOpenmrsData {
 	public void setId(Integer id) {
 		this.id = id;
 	}
+	
 	@Override
 	public String getUuid() {
 		return super.getUuid();
 	}
-
+	
 	@Override
 	public void setUuid(String uuid) {
 		super.setUuid(uuid);
 	}
-
+	
 	public Task() {
 	}
 	
